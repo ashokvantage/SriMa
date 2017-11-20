@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlforword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listdesign">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgforword"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imgedit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/courseicon" />
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgedit"
+                android:text="100 LEVEL TY TTC"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtshortdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtname"
+                android:layout_toRightOf="@+id/imgedit"
+                android:text="ALSO, the heading is SriMa NOT SriMaa.ALSO, the heading is SriMa NOT SriMaa. ALSO, the heading is SriMa NOT SriMaa."
+                android:textSize="11dp"
+                android:maxLines="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgforword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/forword"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

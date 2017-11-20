@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/background">
+
+                    <RelativeLayout
+                        android:id="@+id/rlimage"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background="@color/black">
+
+                        <ImageView
+                            android:id="@+id/imgvideo"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp" />
+                        <ImageView
+                            android:id="@+id/imgclock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/imgshare"
+                            android:background="@mipmap/clock"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/imgshare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@mipmap/share"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/imgplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@mipmap/play" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/rlimage">
+                        <TextView
+                            android:id="@+id/txtname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:maxLines="2"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/txtdetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lorem_text2"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:maxLines="2"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/txtname"/>
+
+                        <TextView
+                            android:id="@+id/txtview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:padding="5dp"
+                            android:text="Views"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/txttime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="5dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Time"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,370 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idall"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background">
+    <ScrollView
+        android:id="@+id/scv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/txtt"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="ABOUT US"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/txtt"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rl1"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlbox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/txt1"
+                    android:background="@color/black"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="(YAI)"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title1"
+                        android:gravity="center_horizontal"
+                        android:text="YOGA ALLIANCE\nINTERNATIONAL"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rlbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/txt1"
+                    android:background="@color/black"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="(SRIMA)"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title2"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rl2"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlbox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/txt2"
+                    android:background="@color/black"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="(FOUNDER/\nPRESIDENT) jjyjyjyj"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title3"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rlbox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/txt2"
+                    android:background="@color/black"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="(CHAIRPERSON)"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title4"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rl3"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlbox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/txt3"
+                    android:background="@color/black"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="(CEO)"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title5"
+                        android:gravity="center_horizontal"
+                        android:text="(CHIEF EXECUTIVE \nOFFICER)"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rlbox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/txt3"
+                    android:background="@color/black"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="(DIRECTOR)"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title6"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rl4"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlbox7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/black"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="(CO-DIRECTOR)"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title7"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/txtsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="SIGN UP"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/imgfacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/imgtwitter"
+            android:background="@mipmap/facebook" />
+
+        <ImageView
+            android:id="@+id/imgtwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/imginstagram"
+            android:background="@mipmap/twitter" />
+
+        <ImageView
+            android:id="@+id/imginstagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/instagram" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
